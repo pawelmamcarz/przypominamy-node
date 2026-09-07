@@ -2,18 +2,44 @@
   "name": "przypominamy",
   "version": "2.0.0",
   "description": "Klient API SMS przypominamy.com — wysyłka SMS z Node.js, Deno, Bun i Workers. Polska bramka SMS, REST, Bearer, webhooki HMAC.",
-  "keywords": ["sms", "sms api", "bramka sms", "api sms polska", "przypominamy", "sms polska", "wysylka sms", "otp sms", "2fa sms"],
+  "keywords": [
+    "sms",
+    "sms api",
+    "bramka sms",
+    "api sms polska",
+    "przypominamy",
+    "sms polska",
+    "wysylka sms",
+    "otp sms",
+    "2fa sms"
+  ],
   "homepage": "https://przypominamy.com/api",
-  "bugs": { "email": "support@przypominamy.com" },
-  "repository": { "type": "git", "url": "https://github.com/pawelmamcarz/przypominamy-node.git" },
+  "bugs": {
+    "email": "support@przypominamy.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawelmamcarz/przypominamy-node.git"
+  },
   "license": "MIT",
   "author": "Przypominamy.com <support@przypominamy.com>",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js", "default": "./dist/index.js" } },
-  "files": ["dist", "README.md"],
-  "engines": { "node": ">=18" },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
   "sideEffects": false,
   "scripts": {
     "build": "tsc -p tsconfig.json",
