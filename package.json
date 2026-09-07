@@ -5,7 +5,7 @@
   "keywords": ["sms", "sms api", "bramka sms", "api sms polska", "przypominamy", "sms polska", "wysylka sms", "otp sms", "2fa sms"],
   "homepage": "https://przypominamy.com/api",
   "bugs": { "email": "support@przypominamy.com" },
-  "repository": { "type": "git", "url": "https://github.com/pawelmamcarz/przypominamy-com.git", "directory": "sdk/node" },
+  "repository": { "type": "git", "url": "https://github.com/pawelmamcarz/przypominamy-node.git" },
   "license": "MIT",
   "author": "Przypominamy.com <support@przypominamy.com>",
   "type": "module",
