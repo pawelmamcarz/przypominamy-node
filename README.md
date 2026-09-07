@@ -91,6 +91,10 @@ try {
 }
 ```
 
+## Nowe w API 2.1
+
+Bramka ma od września 2026 także: anulowanie zaplanowanych wysyłek (`DELETE /v1/messages/{id}`, status `cancelled`), okno godzin `send_window` i ważność `expires_at` przy wysyłce, czarną listę z linkiem opt-out `{{opt_out}}` (`/v1/blacklist`), kontakty i grupy z personalizacją `{{imie}}` (`/v1/contacts`, `/v1/groups`, `to: "group:Nazwa"`) oraz zakresy klucza `send` / `read` / `manage`. SDK nie ma jeszcze metod dla tych endpointów ani publicznej metody do dowolnych żądań — wywołaj je bezpośrednio przez `fetch` z tym samym nagłówkiem `Authorization: Bearer …`, według [dokumentacji](https://przypominamy.com/api/docs). Metody SDK (`send`, `getMessage`…) działają bez zmian; pola `send_window` i `expires_at` w wysyłce oraz statusy `cancelled` i `rejected` w odpowiedziach przechodzą przez SDK jako zwykłe pola JSON.
+
 ## Dokumentacja
 
 - [Strona API](https://przypominamy.com/api) · [Redoc](https://przypominamy.com/api/docs) · [OpenAPI 3.1](https://przypominamy.com/openapi.json)
