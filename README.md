@@ -25,7 +25,7 @@ const msg = await sms.send({
 console.log(msg.id, msg.status, msg.cost_grosze); // msg_… queued 9
 ```
 
-Klucz API dostaniesz po założeniu konta na [przypominamy.com/register](https://przypominamy.com/register) (weryfikacja w 24 h).
+Klucz testowy `pk_test_` (25 SMS gratis na własne numery) dostaniesz od razu po założeniu konta na [app.przypominamy.com/register](https://app.przypominamy.com/register); klucz produkcyjny po pierwszym doładowaniu (od 50 zł).
 
 ## Wysyłka masowa
 
